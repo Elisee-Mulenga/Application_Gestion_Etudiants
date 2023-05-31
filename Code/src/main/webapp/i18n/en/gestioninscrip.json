@@ -1,0 +1,24 @@
+{
+  "gestionEtudiantApp": {
+    "gestioninscrip": {
+      "home": {
+        "title": "Gestioninscrips",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Gestioninscrip",
+        "createOrEditLabel": "Create or edit a Gestioninscrip",
+        "notFound": "No Gestioninscrips found"
+      },
+      "created": "A new Gestioninscrip is created with identifier {{ param }}",
+      "updated": "A Gestioninscrip is updated with identifier {{ param }}",
+      "deleted": "A Gestioninscrip is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Gestioninscrip {{ id }}?"
+      },
+      "detail": {
+        "title": "Gestioninscrip"
+      },
+      "id": "ID",
+      "administrateur": "Administrateur"
+    }
+  }
+}

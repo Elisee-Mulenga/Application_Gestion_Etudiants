@@ -1,0 +1,20 @@
+{
+  "applications": ["GestionEtudiant"],
+  "changelogDate": "20230531090944",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "resultat",
+  "fields": [
+    {
+      "fieldName": "moyenne",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Resultat",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

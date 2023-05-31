@@ -1,0 +1,24 @@
+{
+  "applications": ["GestionEtudiant"],
+  "changelogDate": "20230531090144",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "document",
+  "fields": [
+    {
+      "fieldName": "certificat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "piece",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Document",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}

@@ -1,0 +1,79 @@
+{
+  "applications": ["GestionEtudiant"],
+  "changelogDate": "20230531085844",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "administrateur",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postnom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mail",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Administrateur",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "collecteinfo",
+      "otherEntityRelationshipName": "administrateur",
+      "relationshipName": "collecteinfo",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "gestioninscrip",
+      "otherEntityRelationshipName": "administrateur",
+      "relationshipName": "gestioninscrip",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "etudiant",
+      "otherEntityRelationshipName": "administrateur",
+      "relationshipName": "etudiant",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "professeur",
+      "otherEntityRelationshipName": "administrateur",
+      "relationshipName": "professeur",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "gestionInfos",
+      "otherEntityRelationshipName": "administrateur",
+      "relationshipName": "gestionInfos",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "emploiTemps",
+      "otherEntityRelationshipName": "administrateur",
+      "relationshipName": "emploiTemps",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "communication",
+      "otherEntityRelationshipName": "administrateur",
+      "relationshipName": "communication",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

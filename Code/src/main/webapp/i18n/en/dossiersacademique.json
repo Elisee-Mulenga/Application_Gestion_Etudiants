@@ -1,0 +1,25 @@
+{
+  "gestionEtudiantApp": {
+    "dossiersacademique": {
+      "home": {
+        "title": "Dossiersacademiques",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Dossiersacademique",
+        "createOrEditLabel": "Create or edit a Dossiersacademique",
+        "notFound": "No Dossiersacademiques found"
+      },
+      "created": "A new Dossiersacademique is created with identifier {{ param }}",
+      "updated": "A Dossiersacademique is updated with identifier {{ param }}",
+      "deleted": "A Dossiersacademique is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Dossiersacademique {{ id }}?"
+      },
+      "detail": {
+        "title": "Dossiersacademique"
+      },
+      "id": "ID",
+      "relevercotes": "Relevercotes",
+      "bordereau": "Bordereau"
+    }
+  }
+}

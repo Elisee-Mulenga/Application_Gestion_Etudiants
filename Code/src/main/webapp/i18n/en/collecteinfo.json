@@ -1,0 +1,27 @@
+{
+  "gestionEtudiantApp": {
+    "collecteinfo": {
+      "home": {
+        "title": "Collecteinfos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Collecteinfo",
+        "createOrEditLabel": "Create or edit a Collecteinfo",
+        "notFound": "No Collecteinfos found"
+      },
+      "created": "A new Collecteinfo is created with identifier {{ param }}",
+      "updated": "A Collecteinfo is updated with identifier {{ param }}",
+      "deleted": "A Collecteinfo is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Collecteinfo {{ id }}?"
+      },
+      "detail": {
+        "title": "Collecteinfo"
+      },
+      "id": "ID",
+      "infosperson": "Infosperson",
+      "infosacadem": "Infosacadem",
+      "infosadmi": "Infosadmi",
+      "administrateur": "Administrateur"
+    }
+  }
+}

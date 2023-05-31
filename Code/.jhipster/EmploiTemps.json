@@ -1,0 +1,53 @@
+{
+  "applications": ["GestionEtudiant"],
+  "changelogDate": "20230531090544",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "emploi_temps",
+  "fields": [
+    {
+      "fieldName": "cours",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "semestre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timestre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "horairecours",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "horaireexam",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activite",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "EmploiTemps",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "etudiant",
+      "otherEntityRelationshipName": "emploiTemps",
+      "relationshipName": "etudaint",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "administrateur",
+      "otherEntityRelationshipName": "emploiTemps",
+      "relationshipName": "administrateur",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity Etudiant.
+    -->
+    <changeSet id="20230531085644-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="inscription_id"
+                                 baseTableName="etudiant"
+                                 constraintName="fk_etudiant__inscription_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="inscription"/>
+
+        <addForeignKeyConstraint baseColumnNames="dossiersacademique_id"
+                                 baseTableName="etudiant"
+                                 constraintName="fk_etudiant__dossiersacademique_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="dossiersacademique"/>
+
+        <addForeignKeyConstraint baseColumnNames="donnees_id"
+                                 baseTableName="etudiant"
+                                 constraintName="fk_etudiant__donnees_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="donnees"/>
+
+        <addForeignKeyConstraint baseColumnNames="resultat_id"
+                                 baseTableName="etudiant"
+                                 constraintName="fk_etudiant__resultat_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="resultat"/>
+
+        <addForeignKeyConstraint baseColumnNames="document_id"
+                                 baseTableName="etudiant"
+                                 constraintName="fk_etudiant__document_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="document"/>
+
+        <addForeignKeyConstraint baseColumnNames="progression_id"
+                                 baseTableName="etudiant"
+                                 constraintName="fk_etudiant__progression_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="progression"/>
+
+        <addForeignKeyConstraint baseColumnNames="etudiant_id"
+                                 baseTableName="rel_etudiant__communication"
+                                 constraintName="fk_rel_etudiant__communication__etudiant_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="etudiant"/>
+
+        <addForeignKeyConstraint baseColumnNames="communication_id"
+                                 baseTableName="rel_etudiant__communication"
+                                 constraintName="fk_rel_etudiant__communication__communication_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="communication"/>
+
+        <addForeignKeyConstraint baseColumnNames="administrateur_id"
+                                 baseTableName="etudiant"
+                                 constraintName="fk_etudiant__administrateur_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="administrateur"/>
+    </changeSet>
+</databaseChangeLog>

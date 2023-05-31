@@ -1,0 +1,59 @@
+{
+  "applications": ["GestionEtudiant"],
+  "changelogDate": "20230531085744",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "professeur",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postnom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nomcours",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mail",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Professeur",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "cours",
+      "otherEntityRelationshipName": "professeur",
+      "relationshipName": "cours",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "communication",
+      "otherEntityRelationshipName": "professeur",
+      "relationshipName": "communication",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "administrateur",
+      "otherEntityRelationshipName": "professeur",
+      "relationshipName": "administrateur",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

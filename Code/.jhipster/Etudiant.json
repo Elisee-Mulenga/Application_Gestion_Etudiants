@@ -1,0 +1,110 @@
+{
+  "applications": ["GestionEtudiant"],
+  "changelogDate": "20230531085644",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "etudiant",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postnom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateNaissance",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "matricule",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "promotion",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Etudiant",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "inscription",
+      "ownerSide": true,
+      "relationshipName": "inscription",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "dossiersacademique",
+      "ownerSide": true,
+      "relationshipName": "dossiersacademique",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "donnees",
+      "ownerSide": true,
+      "relationshipName": "donnees",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "resultat",
+      "ownerSide": true,
+      "relationshipName": "resultat",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "document",
+      "ownerSide": true,
+      "relationshipName": "document",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "progression",
+      "ownerSide": true,
+      "relationshipName": "progression",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "cours",
+      "otherEntityRelationshipName": "etudiant",
+      "relationshipName": "cours",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "emploiTemps",
+      "otherEntityRelationshipName": "etudaint",
+      "relationshipName": "emploiTemps",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "communication",
+      "otherEntityRelationshipName": "etudiant",
+      "ownerSide": true,
+      "relationshipName": "communication",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "administrateur",
+      "otherEntityRelationshipName": "etudiant",
+      "relationshipName": "administrateur",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

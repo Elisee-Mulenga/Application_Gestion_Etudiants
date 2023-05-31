@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity EmploiTemps.
+    -->
+    <changeSet id="20230531090544-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="etudaint_id"
+                                 baseTableName="emploi_temps"
+                                 constraintName="fk_emploi_temps__etudaint_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="etudiant"/>
+
+        <addForeignKeyConstraint baseColumnNames="administrateur_id"
+                                 baseTableName="emploi_temps"
+                                 constraintName="fk_emploi_temps__administrateur_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="administrateur"/>
+    </changeSet>
+</databaseChangeLog>

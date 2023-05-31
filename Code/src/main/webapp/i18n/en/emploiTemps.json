@@ -1,0 +1,31 @@
+{
+  "gestionEtudiantApp": {
+    "emploiTemps": {
+      "home": {
+        "title": "Emploi Temps",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Emploi Temps",
+        "createOrEditLabel": "Create or edit a Emploi Temps",
+        "notFound": "No Emploi Temps found"
+      },
+      "created": "A new Emploi Temps is created with identifier {{ param }}",
+      "updated": "A Emploi Temps is updated with identifier {{ param }}",
+      "deleted": "A Emploi Temps is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Emploi Temps {{ id }}?"
+      },
+      "detail": {
+        "title": "Emploi Temps"
+      },
+      "id": "ID",
+      "cours": "Cours",
+      "semestre": "Semestre",
+      "timestre": "Timestre",
+      "horairecours": "Horairecours",
+      "horaireexam": "Horaireexam",
+      "activite": "Activite",
+      "etudaint": "Etudaint",
+      "administrateur": "Administrateur"
+    }
+  }
+}

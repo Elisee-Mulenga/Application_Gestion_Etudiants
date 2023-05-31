@@ -1,0 +1,123 @@
+application {
+  config {
+    baseName GestionEtudiant
+    applicationType monolith
+    authenticationType jwt
+    clientFramework react
+    packageName com.esisalama.gestionetudiant
+    serverPort 9999
+  }
+  entities *
+  dto * with mapstruct
+}
+entity Etudiant {
+	nom String
+    postnom String
+    prenom String
+    genre String
+    dateNaissance String
+    adresse String
+    matricule String
+    promotion String
+}
+
+entity Professeur {
+	nom String
+    postnom String
+    prenom String
+    nomcours String
+    adresse String
+    mail String
+}
+
+entity Administrateur {
+	nom String
+    postnom String
+    prenom String
+    adresse String
+    mail String
+}
+entity Cours {
+	titre String
+    note Integer
+}
+entity Donnees{
+	updateinfo String
+}
+entity Document{
+	certificat String
+    piece String
+}
+entity Collecteinfo{
+	infosperson String
+    infosacadem String
+    infosadmi String
+}
+
+entity GestionInfos {
+	infosperson String
+    infosacadem String
+    infosfinance String
+}
+entity Inscription {
+	dateInscription String
+}
+
+entity EmploiTemps {
+	cours String
+    semestre String
+    timestre String
+    horairecours String
+    horaireexam String
+    activite String
+}
+
+entity Gestioninscrip {
+	
+}
+entity Dossiersacademique {
+	relevercotes String
+    bordereau String
+}
+entity Communication {
+	destinataire String
+    expeditaire String
+    forum String
+    annonce String
+}
+entity Resultat {
+	moyenne String
+}
+entity Progression {
+	
+}
+
+relationship OneToOne {
+	Etudiant{Inscription} to Inscription
+    Etudiant{Dossiersacademique} to Dossiersacademique
+    Etudiant{Donnees} to Donnees
+    Etudiant{Resultat} to Resultat
+    Etudiant{Document} to Document
+    Etudiant{Progression} to Progression
+}
+
+relationship OneToMany {
+	Etudiant to Cours{Etudiant}
+    Etudiant to EmploiTemps{Etudaint}
+    
+    Administrateur to Collecteinfo{Administrateur}
+    Administrateur to Gestioninscrip{Administrateur}
+    Administrateur to Etudiant{Administrateur}
+    Administrateur to Professeur{Administrateur}
+    Administrateur to GestionInfos{Administrateur}
+    Administrateur to EmploiTemps{Administrateur}
+    Administrateur to Communication{Administrateur}
+    
+	Professeur to Cours{Professeur}
+    Professeur to Communication{Professeur}
+
+}
+
+relationship ManyToMany {
+    Etudiant{Communication} to Communication{Etudiant}
+}

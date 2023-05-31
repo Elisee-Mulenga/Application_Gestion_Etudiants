@@ -1,0 +1,24 @@
+{
+  "gestionEtudiantApp": {
+    "donnees": {
+      "home": {
+        "title": "Donnees",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Donnees",
+        "createOrEditLabel": "Create or edit a Donnees",
+        "notFound": "No Donnees found"
+      },
+      "created": "A new Donnees is created with identifier {{ param }}",
+      "updated": "A Donnees is updated with identifier {{ param }}",
+      "deleted": "A Donnees is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Donnees {{ id }}?"
+      },
+      "detail": {
+        "title": "Donnees"
+      },
+      "id": "ID",
+      "updateinfo": "Updateinfo"
+    }
+  }
+}

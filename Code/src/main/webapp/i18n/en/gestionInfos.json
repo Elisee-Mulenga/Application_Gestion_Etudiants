@@ -1,0 +1,27 @@
+{
+  "gestionEtudiantApp": {
+    "gestionInfos": {
+      "home": {
+        "title": "Gestion Infos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Gestion Infos",
+        "createOrEditLabel": "Create or edit a Gestion Infos",
+        "notFound": "No Gestion Infos found"
+      },
+      "created": "A new Gestion Infos is created with identifier {{ param }}",
+      "updated": "A Gestion Infos is updated with identifier {{ param }}",
+      "deleted": "A Gestion Infos is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Gestion Infos {{ id }}?"
+      },
+      "detail": {
+        "title": "Gestion Infos"
+      },
+      "id": "ID",
+      "infosperson": "Infosperson",
+      "infosacadem": "Infosacadem",
+      "infosfinance": "Infosfinance",
+      "administrateur": "Administrateur"
+    }
+  }
+}

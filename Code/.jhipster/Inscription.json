@@ -1,0 +1,20 @@
+{
+  "applications": ["GestionEtudiant"],
+  "changelogDate": "20230531090444",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "inscription",
+  "fields": [
+    {
+      "fieldName": "dateInscription",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Inscription",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}
