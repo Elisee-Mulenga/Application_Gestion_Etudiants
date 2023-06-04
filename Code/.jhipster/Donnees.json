@@ -1,6 +1,6 @@
 {
   "applications": ["GestionEtudiant"],
-  "changelogDate": "20230531090044",
+  "changelogDate": "20230531113037",
   "dto": "mapstruct",
   "embedded": false,
   "entityTableName": "donnees",

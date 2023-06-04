@@ -6,7 +6,7 @@
     <!--
         Added the constraints for entity Professeur.
     -->
-    <changeSet id="20230531085744-2" author="jhipster">
+    <changeSet id="20230531112737-2" author="jhipster">
 
         <addForeignKeyConstraint baseColumnNames="administrateur_id"
                                  baseTableName="professeur"

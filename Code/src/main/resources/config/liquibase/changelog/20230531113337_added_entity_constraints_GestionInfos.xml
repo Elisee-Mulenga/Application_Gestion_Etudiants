@@ -4,13 +4,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
     <!--
-        Added the constraints for entity Gestioninscrip.
+        Added the constraints for entity GestionInfos.
     -->
-    <changeSet id="20230531090644-2" author="jhipster">
+    <changeSet id="20230531113337-2" author="jhipster">
 
         <addForeignKeyConstraint baseColumnNames="administrateur_id"
-                                 baseTableName="gestioninscrip"
-                                 constraintName="fk_gestioninscrip__administrateur_id"
+                                 baseTableName="gestion_infos"
+                                 constraintName="fk_gestion_infos__administrateur_id"
                                  referencedColumnNames="id"
                                  referencedTableName="administrateur"/>
     </changeSet>
