@@ -20,30 +20,31 @@ public class Etudiant implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceGenerator")
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "sequenceGenerator")
     @SequenceGenerator(name = "sequenceGenerator")
     @Column(name = "id")
     private Long id;
+    private static int counter = 0;
 
-    @Column(name = "nom")
+    @Column(name = "nom",nullable = false, length = 50)
     private String nom;
 
-    @Column(name = "postnom")
+    @Column(name = "postnom",nullable = false, length = 50)
     private String postnom;
 
-    @Column(name = "prenom")
+    @Column(name = "prenom",nullable = false, length = 50)
     private String prenom;
 
-    @Column(name = "genre")
+    @Column(name = "genre",nullable = false, length = 2)
     private String genre;
 
-    @Column(name = "date_naissance")
+    @Column(name = "date_naissance",nullable = false, length = 50)
     private String dateNaissance;
 
-    @Column(name = "adresse")
+    @Column(name = "adresse",nullable = false, length = 70)
     private String adresse;
 
-    @Column(name = "matricule")
+    @Column(name = "matricule",nullable = false, unique = true, length = 10, updatable = false)
     private String matricule;
 
     @Column(name = "promotion")
